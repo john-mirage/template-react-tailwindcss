@@ -11,10 +11,8 @@
 ## Prettier configuration for VScode
 
 ```json
-// enable globally (here: format on save)
-"editor.formatOnSave": true
-// enable per-language (here: Prettier as formatter)
-"[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-}
+"editor.formatOnSave": true,
+"[typescript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
 ```
