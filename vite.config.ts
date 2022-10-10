@@ -4,13 +4,7 @@ import { resolve } from "path";
 
 export default defineConfig({
   base: "/repository-name/",
-  plugins: [
-    react({
-      babel: {
-        plugins: [["babel-plugin-styled-components", { fileName: false }]],
-      },
-    }),
-  ],
+  plugins: [react()],
   resolve: {
     alias: {
       "@components": resolve(__dirname, "src/components"),
