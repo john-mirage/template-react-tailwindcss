@@ -11,6 +11,7 @@ module.exports = {
       "lg": "992px",
       "xl": "1200px",
       "2xl": "1400px",
+      "hover-device": { "raw": "(hover: hover)" },
     },
     colors: {
       transparent: "transparent",
@@ -20,8 +21,11 @@ module.exports = {
       "1": "0.0625rem",
       "2": "0.125rem",
       "4": "0.25rem",
+      "6": "0.375rem",
       "8": "0.5rem",
+      "10": "0.625rem",
       "12": "0.75rem",
+      "14": "0.875rem",
       "16": "1rem",
       "20": "1.25rem",
       "24": "1.5rem",
@@ -43,25 +47,30 @@ module.exports = {
       "88": "5.5rem",
       "92": "5.75rem",
       "96": "6rem",
-      "100": "6.25rem",
       "128": "8rem",
-      "256": "16rem",
-      "512": "32rem",
-      "1024": "64rem",
     },
-    fontWeight: {
-      "300": "300",
-      "400": "400",
-      "500": "500",
-      "600": "600",
-      "700": "700",
-      "800": "800",
-    },
+    fontSize: ({ theme }) => ({
+      "heading": [theme("spacing[24]"), {
+        lineHeight: theme("spacing[32]"),
+        letterSpacing: "0",
+        fontWeight: "700",
+      }],
+      "body": [theme("spacing[16]"), {
+        lineHeight: theme("spacing[24]"),
+        letterSpacing: "0",
+        fontWeight: "400",
+      }],
+    }),
     extend: {
       fontFamily: {
         sans: ["font name", ...defaultTheme.fontFamily.sans],
       },
     },
   },
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require("@tailwindcss/aspect-ratio"),
+  ],
 };
