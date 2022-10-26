@@ -2,17 +2,8 @@
 
 ## Features
 
-- Typing with Typescript
-- Linting with Eslint
-- Formatting with Prettier
-- Testing with Vitest and React testing library
-- TailwindCSS classes sorting using prettier plugin
-
-## Prettier configuration for VScode
-
-```json
-"editor.formatOnSave": true,
-"[typescript]": {
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-```
+- Types with Typescript
+- Javascript linting with Eslint
+- Code Formatting with Prettier
+- Unit testing with Vitest
+- Integration testing with React testing library
