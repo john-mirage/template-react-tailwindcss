@@ -20,7 +20,7 @@
       "@components/*": ["src/components/*"],
       "@images/*": ["src/images/*"],
       "@test/*": ["src/test/*"],
-      "@utils/*": ["src/utils/*"],
+      "@utils/*": ["src/utils/*"]
     },
     "types": ["vitest/globals"]
   },
