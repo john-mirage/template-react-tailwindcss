@@ -2,7 +2,10 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 const pxToRem = (px) => {
-  return `${String(px / 16)}rem`;
+  if (typeof px === "number") {
+    return `${String(px / 16)}rem`;
+  }
+  throw new Error("The pixels value must be a number");
 }
 
 module.exports = {
