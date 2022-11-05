@@ -1,6 +1,4 @@
-import { FunctionComponent } from "react";
-
-const App: FunctionComponent = () => {
+const App = () => {
   return <h1 className="text-heading">Hello world!</h1>;
 };
 
