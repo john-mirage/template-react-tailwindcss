@@ -21,7 +21,9 @@ module.exports = {
       "hover-device": { "raw": "(hover: hover)" },
     },
     colors: {
-      transparent: "transparent",
+      "transparent": "transparent",
+      "blue": "#60a5fa",
+      "dark-blue": "#172554"
     },
     spacing: {
       "0": "0px",
@@ -57,8 +59,8 @@ module.exports = {
       "128": pxToRem(128),
     },
     fontSize: ({ theme }) => ({
-      "heading": [theme("spacing[24]"), {
-        lineHeight: theme("spacing[32]"),
+      "heading": [theme("spacing[72]"), {
+        lineHeight: theme("spacing[72]"),
         letterSpacing: "0",
         fontWeight: "700",
       }],
@@ -74,10 +76,5 @@ module.exports = {
       },
     },
   },
-  corePlugins: {
-    aspectRatio: false,
-  },
-  plugins: [
-    require("@tailwindcss/aspect-ratio"),
-  ],
+  plugins: [],
 };

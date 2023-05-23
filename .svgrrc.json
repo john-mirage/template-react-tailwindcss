@@ -5,10 +5,6 @@
   "svgoConfig": {
     "plugins": [
       {
-        "name": "removeDimensions",
-        "active": true
-      },
-      {
         "name": "prefixIds",
         "active": true
       }
